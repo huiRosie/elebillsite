@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="common/css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="pages/index/index.css"/>
+		<title>一笔</title>
+	</head>
+	<body>
+		<div class="wrap" id="app">
+			<!--公共头部-->
+			<div class="top">
+				<div class="topT">
+					<div class="topTBox">
+						<div class="topTLeft">
+							<div class="topTLeftTel">
+								<span>客服热线：400-666-8888</span>
+							</div>
+							<div class="topTLeftTime">
+								<span>客服时间：上午9:00-下午17:30（工作日）</span>
+							</div>
+						</div>
+						<ul class="topTRight">
+							<li class="topTRightLogin"><span>登录</span></li>
+							<li class="topTRightPerson"><span>个人中心</span></li>
+						</ul>
+					</div>
+				</div>
+				<div class="topB">
+					<div class="topBBox">
+						<h1 class="topBLogo">一笔官网首页</h1>
+						<div class="topBNav">
+							<!-- 使用 router-link 组件来导航. -->
+						    <!-- 通过传入 `to` 属性指定链接. -->
+						    <!-- <router-link> 默认会被渲染成一个 `<a>` 标签 -->
+						    <router-link class="topBNav_index" to="/index">首页</router-link>
+	    					<router-link class="topBNav_out" to="/out">我要出票</router-link>
+	    					<router-link class="topBNav_in" to="/in">我要收票</router-link>
+	    					<router-link class="topBNav_us" to="/us">我要收票</router-link>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 路由出口 -->
+			<!-- 路由匹配到的组件将渲染在这里 -->
+			<div class="container">
+				<router-view></router-view>
+			</div>
+			<!--公共底部-->
+			<div class="bottom">
+				<p class="bottomCopyright">Copyright © 2002-2011. 武汉华四投资顾问有限公司 版权所有 Power by Mereca
+鄂ICP备14007080号-1</p>
+			</div>
+		</div>
+		<script src="common/script/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="common/script/vue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://unpkg.com/vue-router/dist/vue-router.js" type="text/javascript" charset="utf-8"></script>
+		<script src="pages/index/index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

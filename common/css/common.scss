@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    list-style: none;
+}
+
+.clear{
+    clear: both;
+}
+
+
+.wrap{
+    width: 100%;
+    height: auto;
+    .top{
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        background: #fff;
+        .topT{
+            width: 100%;
+            height: 40px;
+            background: #f2f2f2;
+            .topTBox{
+                width: 1200px;
+                height: 40px;
+                margin: 0 auto;
+                line-height: 40px;
+                font-size: 14px;
+                overflow: hidden;
+                .topTLeft{
+                    float: left;
+                    width:700px;
+                    .topTLeftTel{
+                        float: left;
+                        width: 300px;
+                    }
+                    .topTLeftTime{
+                        float: left;
+                        width: 300px;
+                    }
+                }
+                .topTRight{
+                    float: right;
+                    width: 500px;
+                    li{
+                        float: left;
+                        width: 100px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .topB{
+            width: 100%;
+            height: 100px;
+            .topBBox{
+                width: 1200px;
+                margin: 0 auto;
+                .topBLogo{
+                    float: left;
+                }
+                .topBNav{
+                    float: right;
+                }
+            }
+        }
+    }
+    .container{
+        width: 100%;
+        margin-top: 140px;
+    }
+    .bottom{
+        width: 100%;
+        height: 100px;
+    }
+}
