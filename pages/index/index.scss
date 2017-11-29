@@ -1,5 +1,2635 @@
+$color1: #ff8000;
+$color2: #f23d3d;
+$colorb: #f1f1f1;
+$color4: #444;
+$color5: #555;
+$color9: #999;
+$fontizeti: 18px;
+$fontizebu: 16px;
+$fontizetx: 14px;
+$fontizede: 12px;
 
 
-.router-link-active {
-  color: red;
+//shouye
+.index {
+    width: 100%;
+    height: auto;
+    //banner
+    .banner {
+        min-width: 1280px;
+        height: 460px;
+        img {
+            display: block;
+            width: 100%;
+            height: 460px;
+        }
+        .swiper-pagination-bullets{
+            transition:5s;
+        }
+        
+        .swiper-pagination-bullets .swiper-pagination-bullet{
+            background: #fff;
+            width: 12px;
+            height: 12px;
+            margin-right:10px;
+            border-radius:6px;
+            cursor: pointer;
+            opacity: 0.5;
+        }
+        
+        .swiper-pagination-bullets .swiper-pagination-bullet-active{
+            list-style: none;
+            background:$color1;
+            width: 12px;
+            height: 12px;
+            margin-right:10px;
+            border-radius:6px;
+            cursor: pointer;
+            opacity: 1;
+        }
+    }
+    //sidatese
+    .fourFeature {
+        min-width: 1280px;
+        height: 260px;
+        background: white;
+        margin-bottom: 1px;
+        .fourFeatureList {
+            width: 1280px;
+            height: 220px;
+            margin: 0 auto;
+            padding-top: 40px;
+            .fourFeatureItem {
+                float: left;
+                width: 126px;
+                text-align: center;
+                margin-right: 232px;
+                img {
+                    display: block;
+                }
+                .fourFeatureItemName {
+                    font-size: 20px;
+                    color: $color4;
+                    height: 28px;
+                    line-height: 28px;
+                    margin: 18px auto;
+                }
+            }
+            .fourFeatureItem:last-child {
+                margin: 0;
+            }
+        }
+    }
+    //jiaoyiliucheng
+    .flow {
+        min-width: 1280px;
+        height: 108px;
+        background: white;
+        .flowBox {
+            width: 1280px;
+            height: 108px;
+            margin: 0 auto;
+            overflow: hidden;
+            .flowSub {
+                float: left;
+                width: 100px;
+                margin-top: 13px;
+                .flowTitle {
+                    font-size: $fontizetx;
+                    color: $color4;
+                    height: 29px;
+                    line-height: 29px;
+                }
+                img {
+                    display: block;
+                }
+            }
+            .flowList {
+                float: left;
+                padding: 31px 0;
+                .flowItem {
+                    float: left;
+                    margin-right: 63px;
+                    img {
+                        display: block;
+                        float: left;
+                        margin-right:5px;
+                    }
+                    .flowDes {
+                        float: left;
+                        .flowItemTitle {
+                            font-size: $fontizetx;
+                            color: $color4;
+                            height:26px;
+                            line-height:26px;
+                        }
+                        .flowItemDes {
+                            font-size: 12px;
+                            color: #878787;
+                            height: 18px;
+                            line-height:18px;
+                        }
+                    }
+                }
+                .flowItem:last-child {
+                    margin: 0;
+                    img {
+                        margin-right:6px;
+                    }
+                }
+            }
+        }
+    }
+    //yinpiao list
+    .bill{
+        min-width: 1280px;
+        height: auto;
+        .billBox{
+            width: 1280px;
+            margin: 0 auto;
+            padding:78px 0;
+            .billList{
+                width: 1280px;
+                height: auto;
+                overflow: hidden;
+                .billItem{
+                    width:300px;
+                    height: 312px;
+                    float: left;
+                    margin:0 26px 26px 0;
+                    background: url(../../images/billbg.png) no-repeat center;
+                    .billItemPrice{
+                        width: 100%;
+                        height: 70px;
+                        line-height: 70px;
+                        text-align: center;
+                        font-size: 46px;
+                        color: $color1;
+                        padding-top: 12px;
+                        span{
+                            font-weight: 600;
+                        }
+                    }
+                    .billItemDeadline{
+                        width: 100%;
+                        height: 26px;
+                        line-height: 26px;
+                        text-align: center;
+                        font-size: $fontizeti;
+                        padding-bottom: 32px;
+                        span{
+                            color: #ec242f;
+                        }
+                    }
+                    .billItemDate,.billItemDrawer,.billItemBank{
+                        padding-left:38px;
+                        height:20px;
+                        line-height: 20px;
+                        font-size: $fontizetx;
+                        color: #878787;
+                        margin-bottom: 7px;
+                        span{
+                            color: #434343;
+                        }
+                    }
+                    .billItemBid{
+                        display: block;
+                        width: 100%;
+                        height:58px;
+                        line-height: 58px;
+                        text-align: center;
+                        color: white;
+                        font-size: $fontizebu;
+                        margin-top:40px;
+                        background-image: linear-gradient(45deg, rgba(255, 47, 47, 0.5), rgba(245, 177, 25, 0.5)), linear-gradient(#f23d3d, #f23d3d);
+                    }
+                }
+                .billItem:nth-child(4),.billItem:nth-child(8),.billItem:nth-child(12){
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    //partner
+    .partner{
+        min-width: 1280px;
+        height: 186px;
+        padding-bottom:50px;
+        .partnerBox{
+            width: 1280px;
+            height: 186px;
+            margin: 0 auto;
+            background: white;
+            .partnerTop{
+                width: 1220px;
+                height: 55px;
+                line-height: 55px;
+                padding: 0 30px;
+                border-bottom: 1px dashed #d8d8d8;
+                .partnerTopTitle{
+                    font-size:24px;
+                    color: #333;
+                    float: left;
+                }
+                span{
+                    font-size:14px;
+                    color: $color1;
+                    padding-left: 8px;
+                }
+            }
+            .partnerList{
+                width: 1220px;
+                height:130px;
+                padding: 43px 30px;
+                .partnerItem{
+                    width: auto;
+                    float: left;
+                    margin-right:76px;
+                    img{
+                        display: block;
+                    }
+                }
+                .partnerItem:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+//chupiao
+.out{
+    width: 100%;
+    height: auto;
+    background: $colorb;
+    padding: 20px 0;
+    .outContent{
+        width: 1280px;
+        margin: 0 auto;
+        .outTitle{
+            width: 100%;
+            height: 58px;
+            line-height: 58px;
+            color: $color5;
+            font-size: $fontizetx;
+            text-indent: 30px;
+            margin-bottom: 1px;
+            background: white;
+            
+        }
+        .outMain{
+            width: 100%;
+            height: auto;
+            background: white;
+            .outBasic{
+                width:1220px;
+                height: auto;
+                padding: 25px 30px 50px;
+                margin: 0 auto;
+                overflow: hidden;
+                .outBasicTitle{
+                    width: 100%;
+                    height: 20px;
+                    line-height: 20px;
+                    font-size: $fontizebu;
+                    text-indent: 10px;
+                    font-weight: 600;
+                    margin-bottom: 35px;
+                    border-left:5px solid $color1;
+                    span{
+                        font-size: 12px;
+                        color: #878787;
+                        font-weight: 100;
+                    }
+                }
+                .outBasicInfo{
+                    width: 100%;
+                    height: auto;
+                    .outBasicInfoItem{
+                        width: 100%;
+                        height: 46px;
+                        line-height:46px;
+                        margin-bottom:24px;
+                        overflow: hidden;
+                        .outBasicInfoItem_label{
+                            width: 84px;
+                            height: 46px;
+                            margin-right: 50px;
+                            float: left;
+                        }
+                        .outBasicInfoItem_ipt{
+                            width: 318px;
+                            height: 44px;
+                            float: left;
+                            line-height:44px;
+                            border: 1px solid $color9;
+                            border-radius: 4px;
+                            input{
+                                display: block;
+                                width:296px;
+                                height: 44px;
+                                line-height:44px;
+                                text-indent: 20px;
+                                border-radius: 4px;
+                                float: left;
+                            }
+                            span{
+                                float: left;
+                                color: #878787;
+                            }
+                        }
+                        .outBasicInfoItem_exchange{
+                            width: auto;
+                            height: 46px;
+                            margin-left: 20px;
+                            float: left;
+                            span{
+                                float: left;
+                                color: $color1;
+                            }
+                        }
+                    }
+                    .outBasicInfoItem:first-child{
+                        .outBasicInfoItem_ipt{
+                            width:462px;
+                            input{
+                                width:440px;
+                            }
+                        }
+                    }
+                }
+            }
+            .outUpload{
+                width:1220px;
+                height: auto;
+                padding: 25px 30px 50px;
+                margin: 0 auto;
+                overflow: hidden;
+                .outUploadTitle{
+                    width: 100%;
+                    height: 20px;
+                    line-height: 20px;
+                    font-size: $fontizebu;
+                    text-indent: 10px;
+                    font-weight: 600;
+                    margin-bottom:25px;
+                    border-left:5px solid $color1;
+                }
+                .outUploadList{
+                    width: 100%;
+                    height: auto;
+                    .outUploadFont{
+                        width: 100%;
+                        height:200px;
+                        margin-bottom:24px;
+                        overflow: hidden;
+                        .outUploadFont_label{
+                            width: 120px;
+                            height:20px;
+                            line-height: 20px;
+                            margin-right:14px;
+                            float: left;
+                            .outUploadFont_labelsub{
+                                font-size:$fontizede;
+                                color: #c30015;
+                            }
+                        }
+                        .outUploadFont_txt{
+                            width:196px;
+                            height:196px;
+                            float: left;
+                            border:2px dashed #e1e1e1;
+                        }
+                    }
+                    .outUploadBack{
+                        width: 100%;
+                        height:200px;
+                        margin-bottom:24px;
+                        overflow: hidden;
+                        .outUploadBack_label{
+                            width: 120px;
+                            height:20px;
+                            line-height: 20px;
+                            margin-right:14px;
+                            float: left;
+                            .outUploadBack_labelsub{
+                                font-size:$fontizede;
+                                color: #c30015;
+                            }
+                        }
+                        .outUploadBack_txt{
+                            width:196px;
+                            height:196px;
+                            float: left;
+                            border:2px dashed #e1e1e1;
+                        }
+                    }
+                    .outUploadFile{
+                        width: 100%;
+                        height:46px;
+                        line-height:46px;
+                        margin-bottom:24px;
+                        overflow: hidden;
+                        .outUploadFile_label{
+                            width: 120px;
+                            height:46px;
+                            margin-right:14px;
+                            float: left;
+                        }
+                        .outUploadFile_btn{
+                            width:240px;
+                            height:46px;
+                            float: left;
+                            color: white;
+                            text-align: center;
+                            border-radius: 4px;
+                            background: $color1;
+                        }
+                    }
+                    .outUploadArea{
+                        width: 100%;
+                        height:46px;
+                        line-height:46px;
+                        margin-bottom:24px;
+                        overflow: hidden;
+                        .outUploadArea_label{
+                            width: 120px;
+                            height:46px;
+                            margin-right:14px;
+                            float: left;
+                        }
+                        .outUploadArea_txt{
+                            width:240px;
+                            height:44px;
+                            float: left;
+                            text-align: center;
+                            border-radius: 4px;
+                            border: 1px solid #999;
+                            input{
+                                width:214px;
+                                height:44px;
+                                float: left;
+                                text-indent: 20px;
+                                border-radius: 4px;
+                            }
+                            img{
+                                display: block;
+                                float: left;
+                                width: 18px;
+                                height: 22px;
+                                margin:11px 4px;
+                            }
+                        }
+                    }
+                    .outUploadRemark{
+                        width: 100%;
+                        height:200px;
+                        line-height:46px;
+                        margin-bottom:24px;
+                        overflow: hidden;
+                        .outUploadRemark_label{
+                            width: 120px;
+                            height:46px;
+                            margin-right:14px;
+                            float: left;
+                        }
+                        .outUploadRemark_txt{
+                            width:1080px;
+                            height:198px;
+                            float: left;
+                            text-align: center;
+                            border-radius: 4px;
+                            border: 1px solid #999;
+                            textarea{
+                                width:1076px;
+                                height:194px;
+                                float: left;
+                                border: 0;
+                                text-indent: 20px;
+                                border-radius: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+            .outBtn{
+                width: 100%;
+                height: 46px;
+                line-height: 46px;
+                padding-bottom: 50px;
+                .outBtnLink{
+                    display: block;
+                    width:240px;
+                    height: 46px;
+                    color: white;
+                    font-size: $fontizebu;
+                    text-align: center;
+                    background: $color1;
+                    margin: 0 auto;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+}
+
+//shoupiao
+.in{
+    width: 100%;
+    height: auto;
+    background: $colorb;
+    padding: 20px 0;
+    .inContent{
+        width: 1280px;
+        margin: 0 auto;
+        .inTitle{
+            width: 100%;
+            height: 58px;
+            line-height: 58px;
+            color: $color5;
+            font-size: $fontizetx;
+            text-indent: 30px;
+            margin-bottom: 1px;
+            background: white;
+        }
+        .inMain{
+            width: 100%;
+            height: auto;
+            background: white;
+            .inSear{
+                width:1124px;
+                height: auto;
+                margin: 0 auto 50px;
+                overflow: hidden;
+                .inSearLeft{
+                    width: 252px;
+                    height: 465px;
+                    float: left;
+                    background-image: linear-gradient(152deg, rgba(253, 189, 21, 0.5), rgba(244, 38, 38, 0.5)), linear-gradient(#ff8000, #ff8000);
+                    .inSearPriceTitle{
+                        color: white;
+                        width: 100%;
+                        height:26px;
+                        line-height: 26px;
+                        text-align: center;
+                        padding: 20px 0;
+                        font-size: $fontizeti;
+                        font-weight: 500;
+                    }
+                    .inSearPriceList{
+                        width: 136px;
+                        height: auto;
+                        margin: 0 auto;
+                        .inSearPriceItem{
+                            width: 136px;
+                            height: 46px;
+                            line-height: 46px;
+                            text-align: center;
+                            font-size: $fontizebu;
+                            border-radius: 5px;
+                            color: $color5;
+                            background: white;
+                            margin-bottom: 30px;
+                            cursor: pointer;
+                        }
+                        .inSearPriceItemActive{
+                            color: white;
+                            background:#f33c3c;
+                        }
+                        .inSearPriceItem:hover{
+                            color: white;
+                            background:#f33c3c;
+                        }
+                    }
+                }
+                .inSearRight{
+                    float: left;
+                    width: 800px;
+                    padding:22px 0 0 72px;
+                    .inSearCondTitle{
+                        width: 100%;
+                        height: 20px;
+                        line-height: 20px;
+                        font-size: $fontizebu;
+                        color: $color5;
+                        text-indent: 10px;
+                        border-left:5px solid $color1;
+                    }
+                    .inSearCondList{
+                        width: 100%;
+                        height: auto;
+                        overflow: hidden;
+                        .inSearCondItem{
+                            width: 100%;
+                            min-height:42px;
+                            line-height: 42px;
+                            margin: 10px;
+                            overflow: hidden;
+                            .inSearCondItemTitle{
+                                font-size: $fontizebu;
+                                color: $color5;
+                                float: left;
+                                margin-right: 100px;
+                            }
+                            .inSearCondItemListItem{
+                                width:92px;
+                                float: left;
+                                margin-right:89px;
+                                input{
+                                    margin-right:10px;
+                                }
+                            }
+                            .inSearchWhite{
+                                width:164px;
+                                height: 1px;
+                                float: left;
+                            }
+                            .inSearCondItemListItem:last-child,.inSearCondItemListItem:nth-child(5){
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            .inBill{
+                width:1128px;
+                height: auto;
+                overflow: hidden;
+                margin:50px auto;
+                padding-bottom:50px;
+                .inBillItem{
+                    height:30px;
+                    line-height: 30px;
+                    padding: 15px 0;
+                    font-size: $fontizetx;
+                    border-bottom: 1px solid #e1e1e1;
+                    div{
+                        width:112px;
+                        float: left;
+                        text-align: center;
+                        a{
+                            display: block;
+                            width: 80px;
+                            height: 30px;
+                            line-height: 30px;
+                            text-align: center;      
+                            border: 1px solid #999;
+                            border-radius: 2px; 
+                            margin: 0 auto;                    
+                        }
+                        a:hover{
+                            color: $color1;
+                        }
+                    }
+                }
+                .inBillItem:first-child{
+                    height:30px;
+                    line-height: 30px;
+                    padding: 10px 0;
+                    font-weight: 500;
+                    font-size: $fontizebu;
+                    border-top: 1px solid #e1e1e1;
+                    border-bottom: 2px solid #999;
+                }
+            }
+        }
+    }
+}
+
+//shoupiaoxinagqing
+.inDetail{
+    width: 100%;
+    height: auto;
+    background: $colorb;
+    padding: 20px 0;
+    .inDetContent{
+        width: 1280px;
+        margin: 0 auto;
+        .inDetTitle{
+            width: 100%;
+            height: 58px;
+            line-height: 58px;
+            text-indent: 30px;
+            margin-bottom: 1px;
+            background: white;
+            a:hover{
+                color: $color1;
+            }
+        }
+        .inDetMain{
+            width: 100%;
+            height: auto;
+            background: white;
+            .inDetBill{
+                width:1220px;
+                height: auto;
+                padding: 25px 30px 50px;
+                margin: 0 auto;
+                overflow: hidden;
+                .inDetBillTitle{
+                    width: 100%;
+                    height: 20px;
+                    line-height: 20px;
+                    font-size: $fontizebu;
+                    text-indent: 10px;
+                    font-weight: 600;
+                    margin-bottom: 35px;
+                    border-left:5px solid $color1;
+                }
+                .inDetBillInfo{
+                    width: 100%;
+                    height: auto;
+                    overflow: hidden;
+                    .inDetBillInfoLeft{
+                        width: 520px;
+                        height:326px;
+                        float: left;
+                        .inDetBillInfoItem{
+                            width: 100%;
+                            height: 20px;
+                            line-height: 20px;
+                            margin-bottom: 31px;
+                            overflow: hidden;
+                            .inDetBillInfoItem_label{
+                                width:106px;
+                                height: 20px;
+                                float: left;
+                                margin-right: 54px;
+                                text-align: right;
+                            }
+                            .inDetBillInfoItem_text{
+                                width: 360px;
+                                height: 20px;
+                                float: left;
+                            }
+                        }
+                    }
+                    .inDetBillInfoRight{
+                        width:570px;
+                        height: 326px;
+                        float: left;
+                        img{
+                            display: block;
+                            width: 570px;
+                            height: 326px;
+                        }
+                    }
+                }
+                
+            }
+            .inDetAttach{
+                width:1220px;
+                height: auto;
+                padding: 25px 30px 50px;
+                margin: 0 auto;
+                overflow: hidden;
+                .inDetAttachTitle{
+                    width: 100%;
+                    height: 20px;
+                    line-height: 20px;
+                    font-size: $fontizebu;
+                    text-indent: 10px;
+                    font-weight: 600;
+                    margin-bottom: 35px;
+                    border-left:5px solid $color1;
+                }
+                .inDetAttachInfo{
+                    padding: 0 10px;
+                    img{
+                        display: block;
+                        width: 92px;
+                        height: 108px;
+                        margin-bottom: 10px;
+                    }
+                    .inDetAttachDes{
+                        width: 92px;
+                        height:20px;
+                        line-height: 20px;
+                        text-align: center;
+                    }
+                }
+            }
+            .inDetBtn{
+                width: 100%;
+                height:58px;
+                padding-bottom: 50px;
+                .inDetBtnClick{
+                    display: block;
+                    width: 300px;
+                    height: 58px;
+                    line-height: 58px;
+                    text-align: center;
+                    color: white;
+                    background: $color1;
+                    font-size: $fontizebu;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+//lianxiwomen
+.us{
+    width: 100%;
+    height: auto;
+    background: $colorb;
+    padding: 36px 0 50px;
+    .usContent{
+        width: 1280px;
+        margin: 0 auto;
+        .usTitle{
+            width: 100%;
+            height: 26px;
+            line-height: 26px;
+            font-size: $fontizeti;
+            margin-bottom: 18px;
+        }
+        .usMain{
+            width: 100%;
+            height:612px;
+            overflow: hidden;
+            .usMainLeft{
+                width: 166px;
+                height: 166px;
+                float: left;
+                color: white;
+                padding: 16px 20px;
+                margin-right: 16px;
+                background-image: linear-gradient(134deg, rgba(253, 189, 21, 0.5), rgba(244, 38, 38, 0.5)), linear-gradient(#ff8000, #ff8000);
+                .usMainLeftItem{
+                    margin-bottom:10px;
+                    .usMainLeftItem_text{
+                        font-size: $fontizebu;
+                    }
+                }
+            }
+            .usMainRight{
+                width:1055px;
+                height: 612px;
+                float: left;
+                .usMainRightTitle{
+                    width: 100%;
+                    height: 60px;
+                    line-height: 60px;
+                    color: #434343;
+                    background: white;
+                    text-indent: 20px;
+                }
+                .usMainRightMap{
+                    width: 1055px;
+                    height: 552px;
+                }
+            }
+        }
+    }
+}
+
+//login regist
+.regist{
+    width: 100%;
+    height: auto;
+    background: url(../../images/loginbg.png) no-repeat center;
+    background-size: 100% 100%;
+    padding: 36px 0 50px;
+    .registContent{
+        width: 1280px;
+        height: auto;
+        overflow: hidden;
+        margin: 0 auto;
+        .registMain{
+            width: 400px;
+            height: 360px;
+            float: right;
+            background: white;
+            .registMainTop{
+                width: 100%;
+                height: 25px;
+                line-height: 25px;
+                padding: 16px 0;
+                border-bottom: 1px solid #e1e1e1;
+                a{
+                    display: block;
+                    width:199px;
+                    height: 25px;
+                    font-size: $fontizeti;
+                    text-align: center;
+                    float: left;
+                }
+                .registMainTopRegist{
+                    width: 200px;
+                    border-left: 1px solid #e1e1e1;
+                }
+                .registMainTopActive{
+                    color: $color1;
+                }
+            }
+            //login
+            .registMainLogin{
+                width: 360px;
+                height: auto;
+                padding: 16px 48px 16px 20px;
+                .registMainLoginItem{
+                    width: 100%;
+                    height: auto;
+                    overflow: hidden;
+                    margin-bottom: 20px;
+                    .registMainLoginItem_label{
+                        width: 56px;
+                        height: 46px;
+                        line-height: 46px;
+                        float: left;
+                    }
+                    .registMainLoginItem_text{
+                        width: 266px;
+                        height: 44px;
+                        border: 1px solid #e1e1e1;
+                        border-radius: 4px;
+                        float: left;
+                        input{
+                            display: block;
+                            width: 266px;
+                            height: 44px;
+                            line-height: 44px;
+                            border-radius: 4px;
+                            text-indent: 20px;
+                        }
+                    }
+                    .registMainLoginItem_tip{
+                        width: 100%;
+                        height: 20px;
+                        line-height: 20px;
+                        float: left;
+                        color: red;
+                        font-size: $fontizede;
+                        padding-left: 56px;
+                        display: none;
+                    }
+                }
+                .registMainLoginCode{
+                    .registMainLoginItem_text{
+                        width: 154px;
+                        margin-right: 10px;
+                        input{
+                            width: 154px;
+                        }
+                    }
+                    .registMainLoginItem_getcode{
+                        height: 46px;
+                        line-height: 46px;
+                        float: left;
+                        color: #fd6e08;
+                        cursor: pointer;
+                    }
+                }
+                .registMainLoginBtn{
+                    width: 268px;
+                    height: 46px;
+                    color: white;
+                    font-size: $fontizebu;
+                    line-height: 46px;
+                    text-align: center;
+                    border-radius: 4px;
+                    background-color: #ff8300;
+                    margin-left: 54px;
+                }
+                .registMainLoginPass{
+                    width: 268px;
+                    height: 12px;
+                    line-height: 12px;
+                    margin: 20px 0 20px 54px;
+                    .registMainLoginPass_remember{
+                        height: 12px;
+                        line-height: 12px;
+                        float: left;
+                        font-size: $fontizede;
+                        color: $color1;
+                        input{
+                            display: block;
+                            float: left;
+                        }
+                        span{
+                            display: block;
+                            float: left;
+                            padding-left: 2px;
+                        }
+                    }
+                    .registMainLoginPass_forget{
+                        height: 12px;
+                        float: right;
+                        font-size: $fontizede;
+                        color: $color1;
+                    }
+                }
+            }
+            //regist
+            .registMainReg{
+                width: 360px;
+                height: auto;
+                display: none;
+                padding: 16px 48px 16px 20px;
+                .registMainRegItem{
+                    width: 100%;
+                    height: auto;
+                    overflow: hidden;
+                    margin-bottom: 20px;
+                    .registMainRegItem_label{
+                        width: 56px;
+                        height: 46px;
+                        line-height: 46px;
+                        float: left;
+                    }
+                    .registMainRegItem_text{
+                        width: 266px;
+                        height: 44px;
+                        border: 1px solid #e1e1e1;
+                        border-radius: 4px;
+                        float: left;
+                        input{
+                            display: block;
+                            width: 266px;
+                            height: 44px;
+                            line-height: 44px;
+                            border-radius: 4px;
+                            text-indent: 20px;
+                        }
+                    }
+                    .registMainRegItem_tip{
+                        width: 100%;
+                        height: 20px;
+                        line-height: 20px;
+                        float: left;
+                        color: red;
+                        font-size: $fontizede;
+                        padding-left: 56px;
+                        display: none;
+                    }
+                }
+                .registMainRegCode{
+                    .registMainRegItem_text{
+                        width: 154px;
+                        margin-right: 10px;
+                        input{
+                            width: 154px;
+                        }
+                    }
+                    .registMainRegItem_getcode{
+                        height: 46px;
+                        line-height: 46px;
+                        float: left;
+                        color: #fd6e08;
+                        cursor: pointer;
+                    }
+                }
+                .registMainRegBtn{
+                    width: 268px;
+                    height: 46px;
+                    color: white;
+                    font-size: $fontizebu;
+                    line-height: 46px;
+                    text-align: center;
+                    border-radius: 4px;
+                    background-color: #ff8300;
+                    margin-left: 54px;
+                }
+            }
+        }
+    }
+}
+
+//bangzhuzhongxin
+.helper{
+    width:100%;
+    height: auto;
+    padding: 20px 0;
+    .helperContent{
+        width:1280px;
+        height: auto;
+        margin: 0 auto;
+        .helperTitle{
+            width:1240px;
+            height: 50px;
+            line-height: 50px;
+            padding: 0 20px;
+            margin-bottom: 1px;
+            background: white;
+        }
+        .helperMain{
+            width:1190px;
+            height: auto;
+            padding: 0 45px;
+            background: white;
+            .helperList{
+                width: 100%;
+                height: auto;
+                .helperItem{
+                    display: block;
+                    width:1190px;
+                    height: 40px;
+                    padding: 24px 20px;
+                    border-bottom: 1px dashed #e1e1e1;
+                    .helperItemTitle{
+                        width: 100%;
+                        height: 22px;
+                        line-height: 22px;
+                        .helperItem_dot{
+                            width: 6px;
+                            height: 6px;
+                            float: left;
+                            margin: 8px 5px 6px 0;
+                            border-radius:3px;
+                            background: $color1;
+                        }
+                        .helperItem_text{
+                            float: left;
+                            color: #434343;
+                            font-size: $fontizebu;
+                        }
+                    }
+                    .helperItemDesc{
+                        color: #878787;
+                        font-size: $fontizede;
+                        padding-left: 11px;
+                    }
+                }
+                .helperItemRead{
+                    background:white ;
+                    .helperItem_dot{
+                        background: $color9;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//bangzhuzhongxin zhuceliucheng
+.helpLogin{
+    width:100%;
+    height: auto;
+    padding: 20px 0;
+    .helpLoginContent{
+        width:1280px;
+        height: auto;
+        margin: 0 auto;
+        .helpLoginTitle{
+            width:1240px;
+            height: 50px;
+            line-height: 50px;
+            padding: 0 20px;
+            margin-bottom: 1px;
+            background: white;
+        }
+        .helpLoginMain{
+            width:1200px;
+            height: auto;
+            padding: 24px 40px;
+            background: white;
+            .helpLoginMainTitle{
+                width: 100%;
+                height: 22px;
+                font-size: 16px;
+                font-weight:500;
+                color: #434343;
+                margin-bottom: 10px;
+            }
+            .helpLoginMainTip{
+                width: 1067px;
+                height: auto;
+                line-height: 22px;
+                margin-bottom: 10px;
+            }
+            img{
+                display: block;
+                width: 490px;
+                height: 284px;
+                margin-bottom:24px;
+            }
+        }
+    }
+}
+
+//bangzhuzhongxin renzhengliucheng
+.helpIdent{
+    width:100%;
+    height: auto;
+    padding: 20px 0;
+    .helpIdentContent{
+        width:1280px;
+        height: auto;
+        margin: 0 auto;
+        .helpIdentTitle{
+            width:1240px;
+            height: 50px;
+            line-height: 50px;
+            padding: 0 20px;
+            margin-bottom: 1px;
+            background: white;
+        }
+        .helpIdentMain{
+            width:1200px;
+            height: auto;
+            padding: 24px 40px;
+            background: white;
+            .helpIdentMainTitle{
+                width: 100%;
+                height: 22px;
+                font-size: 16px;
+                font-weight:500;
+                color: #434343;
+                margin-bottom: 10px;
+            }
+            .helpIdentMainTip{
+                width: 1067px;
+                height: auto;
+                line-height: 22px;
+                margin-bottom: 10px;
+            }
+            img{
+                display: block;
+                margin-bottom:24px;
+            }
+        }
+    }
+}
+
+//bangzhuzhongxin maijialiucheng in
+.helpIn{
+    width:100%;
+    height: auto;
+    padding: 20px 0;
+    .helpInContent{
+        width:1280px;
+        height: auto;
+        margin: 0 auto;
+        .helpInTitle{
+            width:1240px;
+            height: 50px;
+            line-height: 50px;
+            padding: 0 20px;
+            margin-bottom: 1px;
+            background: white;
+        }
+        .helpInMain{
+            width:1200px;
+            height: auto;
+            padding: 24px 40px;
+            background: white;
+            .helpInMainTitle{
+                width: 100%;
+                height: 22px;
+                font-size: 16px;
+                font-weight:500;
+                color: #434343;
+                margin-bottom: 10px;
+            }
+            .helpInMainTip{
+                width: 1067px;
+                height: auto;
+                line-height: 22px;
+                margin-bottom: 10px;
+            }
+            img{
+                display: block;
+                margin-bottom:24px;
+            }
+        }
+    }
+}
+
+//bangzhuzhongxin maijialiucheng out
+.helpOut{
+    width:100%;
+    height: auto;
+    padding: 20px 0;
+    .helpOutContent{
+        width:1280px;
+        height: auto;
+        margin: 0 auto;
+        .helpOutTitle{
+            width:1240px;
+            height: 50px;
+            line-height: 50px;
+            padding: 0 20px;
+            margin-bottom: 1px;
+            background: white;
+        }
+        .helpOutMain{
+            width:1200px;
+            height: auto;
+            padding: 24px 40px;
+            background: white;
+            .helpOutMainTitle{
+                width: 100%;
+                height: 22px;
+                font-size: 16px;
+                font-weight:500;
+                color: #434343;
+                margin-bottom: 10px;
+            }
+            .helpOutMainTip{
+                width: 1067px;
+                height: auto;
+                line-height: 22px;
+                margin-bottom: 10px;
+            }
+            img{
+                display: block;
+                margin-bottom:24px;
+            }
+        }
+    }
+}
+
+//huipiao zhushou
+.aide{
+    width:100%;
+    height: auto;
+    padding: 20px 0;
+    .aideContent{
+        width:1280px;
+        height: auto;
+        margin: 0 auto;
+        .aideTitle{
+            width:1240px;
+            height: 50px;
+            line-height: 50px;
+            padding: 0 20px;
+            margin-bottom: 1px;
+            background: white;
+        }
+        .aideMain{
+            width:1080px;
+            height: auto;
+            padding: 30px 100px;
+            background: white;
+            .aideMainTop{
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+                .aideLeft{
+                    width: 540px;
+                    height: auto;
+                    float: left;
+                    .aideLeftCheck{
+                        width: 100%;
+                        height: 20px;
+                        line-height: 12px;
+                        overflow: hidden;
+                        margin-bottom: 20px;
+                        .aideLeftCheckItem{
+                            width: 160px;
+                            height: 20px;
+                            float: left;
+                        }
+                    }
+                    .aideLeftList{
+                        width: 100%;
+                        height: auto;
+                        .sideLeftItem{
+                            width: 100%;
+                            height: 46px;
+                            overflow: hidden;
+                            margin-bottom: 20px;
+                            .aideLeftItem_label{
+                                width: 114px;
+                                height: 46px;
+                                line-height: 46px;
+                                float: left;
+                                span{
+                                    color: #fc0006;
+                                }
+                            }
+                            .aideLeftItem_text{
+                                float: left;
+                                width: 156px;
+                                height: 44px;
+                                line-height: 44px;
+                                border: 1px solid #999;
+                                border-radius: 4px;
+                                input{
+                                    display: block;
+                                    width: 120px;
+                                    height: 44px;
+                                    border-radius: 4px;
+                                    text-indent: 20px;
+                                    float: left;
+                                }
+                                select{
+                                    display: block;
+                                    width: 130px;
+                                    height: 44px;
+                                    border-radius: 4px;
+                                    border: 0;
+                                    margin: 0 10px;
+                                }
+                            }
+                            .aideLeftItem_text2{
+                                width: 90px;
+                                height: 44px;
+                                line-height: 44px;
+                                border: 1px solid #999;
+                                border-radius: 4px;
+                                float: left;
+                                margin-left: 20px;
+                                select{
+                                    display: block;
+                                    width: 70px;
+                                    height: 44px;
+                                    border-radius: 4px;
+                                    border: 0;
+                                    margin: 0 10px;
+                                }
+                            }
+                            .aideLeftItem_des{
+                                width: 100px;
+                                height: 20px;
+                                float: left;
+                                padding-left: 6px;
+                                padding-top: 26px;
+                                color: #878787;
+                                font-size: $fontizede;
+                            }
+                            .aideLeftItem_date{
+                                float: left;
+                                margin:8px 10px;
+                                cursor: pointer;
+                                img{
+                                    display: block;
+                                }
+                            }
+                        }
+                        .sideLeftItem:first-child{
+                            .aideLeftItem_text{
+                                width: 268px;
+                                input{
+                                    width:220px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .aideBorder{
+                    float: left;
+                    width: 1px;
+                    height:396px;
+                    margin: 49px 0;
+                    background: #e1e1e1;
+                }
+                .aideRight{
+                    width: 519px;
+                    height: auto;
+                    float: left;
+                    padding-left: 19px;
+                    .aideRightTitle{
+                        width: 100%;
+                        height: 22px;
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: #ff8300;
+                        margin-bottom: 20px;
+                    }
+                    .aideRightList{
+                        width: 100%;
+                        height: auto;
+                        .aideRightItem{
+                            width: 100%;
+                            height: 46px;
+                            overflow: hidden;
+                            margin-bottom: 20px;
+                            .aideRightItem_label{
+                                width: 114px;
+                                height: 46px;
+                                line-height: 46px;
+                                float: left;
+                            }
+                            .aideRightItem_text{
+                                float: left;
+                                width: 156px;
+                                height: 44px;
+                                line-height: 44px;
+                                border: 1px solid #999;
+                                border-radius: 4px;
+                                input{
+                                    display: block;
+                                    width: 120px;
+                                    height: 44px;
+                                    border-radius: 4px;
+                                    text-indent: 20px;
+                                    float: left;
+                                }
+                            }
+                        }
+                        .aideRightItem:last-child{
+                            .aideRightItem_text{
+                                width: 268px;
+                                input{
+                                    width: 230px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .aideMainBottom{
+                width: 420px;
+                height: 46px;
+                margin: 20px auto 50px;
+                .aideMainBottomCount{
+                    width: 200px;
+                    height: 46px;
+                    line-height: 46px;
+                    text-align: center;
+                    background: $color1;
+                    border-radius: 4px;
+                    color: white;
+                    float: left;
+                    margin-right: 20px;
+                    cursor: pointer;
+                }
+                .aideMainBottomEmpty{
+                    width: 198px;
+                    height: 44px;
+                    line-height: 44px;
+                    text-align: center;
+                    color: $color1;
+                    border: 1px solid $color1;
+                    border-radius: 4px;
+                    float: left;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+//zhanghuzhongxin
+.account{
+    width: 100%;
+    height: auto;
+    background: $colorb;
+    padding: 20px 0;
+    .accountMain{
+        width: 1280px;
+        margin: 0 auto;
+        height: auto;
+        overflow: hidden;
+        .accountLeft{
+            width: 280px;
+            height:638px;
+            float: left;
+            margin-right:18px;
+            background: white;
+            .accountSub{
+                width:240px;
+                height: 22px;
+                padding: 18px 20px;
+                background:#ffefdd;
+                .accountSubTitle{
+                    width:240px;
+                    height: 22px;
+                    line-height: 22px;
+                    font-size: 16px;
+                    font-weight: 500;
+                    text-indent: 10px;
+                    border-left:5px solid $color1;
+                }
+            }
+            .accountSub:hover{
+                color: #fff;
+                background:$color1;
+            }
+            .accountSubActive{
+                color: #fff;
+                background:$color1;
+            }
+            .accountSubNav{
+                width:200px;
+                height: 22px;
+                display: block;
+                padding: 18px 40px;
+            }
+            .router-link-active {
+                color: $color1;
+            }
+        }
+        .accountRight{
+            width: 982px;
+            min-height:357px;
+            float: left;
+        }
+    }
+}
+
+//wodefabu list
+.accountAnnounce{
+    width: 982px;
+    height: auto;
+    .accAnnMain{
+        width: 100%;
+        height: 100%;
+        .accAnnItem{
+            width:982px;
+            height:30px;
+            line-height: 30px;
+            padding:14px 0;
+            margin-bottom: 2px;
+            background: white;
+            .accAnnItemNav{
+                width:136px;
+                text-align: center;
+                float: left;
+                .accAnnItem_scan{
+                    display: block;
+                    width: 80px;
+                    height: 30px;
+                    border: 1px solid $color9;
+                    border-radius: 3px;
+                    margin:0 auto;
+                }
+            }
+            .accAnnItemNav:nth-child(4){
+                width:162px;
+            }
+            .accAnnItemNav:last-child{
+                width:140px;
+            }
+        }
+        .accAnnTitle{
+            color: white;
+            background: $color1;
+        }
+    }
+}
+
+//wodefabu detail
+.myBillDet{
+    width: 100%;
+    height: auto;
+    background: $colorb;
+    .myBillDetContent{
+        width:982px;
+        margin: 0 auto;
+        .myBillDetTitle{
+            width: 100%;
+            height: 58px;
+            line-height: 58px;
+            text-indent: 30px;
+            margin-bottom: 1px;
+            background: white;
+            a:hover{
+                color: $color1;
+            }
+        }
+        .myBillDetMain{
+            width: 100%;
+            height: auto;
+            background: white;
+            .myBillDetBill{
+                width:1220px;
+                height: auto;
+                padding: 25px 30px 50px;
+                margin: 0 auto;
+                overflow: hidden;
+                .myBillDetBillTitle{
+                    width: 100%;
+                    height: 20px;
+                    line-height: 20px;
+                    font-size: $fontizebu;
+                    text-indent: 10px;
+                    font-weight: 600;
+                    margin-bottom: 35px;
+                    border-left:5px solid $color1;
+                }
+                .myBillDetBillInfo{
+                    width: 100%;
+                    height: auto;
+                    overflow: hidden;
+                    .myBillDetBillInfoLeft{
+                        width: 430px;
+                        height:218px;
+                        float: left;
+                        .myBillDetBillInfoItem{
+                            width: 100%;
+                            height: 20px;
+                            line-height: 20px;
+                            margin-bottom:13px;
+                            overflow: hidden;
+                            .myBillDetBillInfoItem_label{
+                                width:106px;
+                                height: 20px;
+                                float: left;
+                                margin-right: 54px;
+                                text-align: right;
+                            }
+                            .myBillDetBillInfoItem_text{
+                                width:270px;
+                                height: 20px;
+                                float: left;
+                            }
+                        }
+                    }
+                    .myBillDetBillInfoRight{
+                        width:382px;
+                        height: 218px;
+                        float: left;
+                        img{
+                            display: block;
+                            width: 382px;
+                            height: 218px;
+                        }
+                    }
+                }
+                
+            }
+            .myBillDetAttach{
+                width:1220px;
+                height: auto;
+                padding: 25px 30px 50px;
+                margin: 0 auto;
+                overflow: hidden;
+                .myBillDetAttachTitle{
+                    width: 100%;
+                    height: 20px;
+                    line-height: 20px;
+                    font-size: $fontizebu;
+                    text-indent: 10px;
+                    font-weight: 600;
+                    margin-bottom: 35px;
+                    border-left:5px solid $color1;
+                }
+                .myBillDetAttachInfo{
+                    padding: 0 10px;
+                    img{
+                        display: block;
+                        width: 92px;
+                        height: 108px;
+                        margin-bottom: 10px;
+                    }
+                    .myBillDetAttachDes{
+                        width: 92px;
+                        height:20px;
+                        line-height: 20px;
+                        text-align: center;
+                    }
+                }
+            }
+            .myBillDetBtn{
+                width: 520px;
+                height:58px;
+                margin: 0 auto;
+                padding-bottom: 50px;
+                .myBillDetBtnBack{
+                    display: block;
+                    width:240px;
+                    height: 58px;
+                    line-height: 58px;
+                    text-align: center;
+                    color: white;
+                    background: $color1;
+                    font-size: $fontizebu;
+                    float: left;
+                    margin-right: 40px;
+                    border-radius: 4px;
+                }
+                .myBillDetBtnFinish{
+                    display: block;
+                    width:240px;
+                    height: 58px;
+                    line-height: 58px;
+                    text-align: center;
+                    color: white;
+                    background: #d1d1d1;
+                    font-size: $fontizebu;
+                    float: left;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+}
+
+//wodebaojia list
+.accountOffer{
+    width: 982px;
+    height: auto;
+    .accOfferMain{
+        width: 100%;
+        height: 100%;
+        .accOfferItem{
+            width:982px;
+            height:30px;
+            line-height: 30px;
+            padding:14px 0;
+            margin-bottom: 2px;
+            background: white;
+            .accOfferItemNav{
+                width:136px;
+                text-align: center;
+                float: left;
+                .accOfferItem_scan{
+                    display: block;
+                    width: 80px;
+                    height: 30px;
+                    border: 1px solid $color9;
+                    border-radius: 3px;
+                    margin:0 auto;
+                }
+            }
+            .accOfferItemNav:nth-child(4){
+                width:162px;
+            }
+            .accOfferItemNav:last-child{
+                width:140px;
+            }
+        }
+        .accOfferTitle{
+            color: white;
+            background: $color1;
+        }
+    }
+}
+
+//wodebaojia detail
+.myOfferDet{
+    width: 100%;
+    height: auto;
+    background: $colorb;
+    .myOfferDetContent{
+        width:982px;
+        margin: 0 auto;
+        .myOfferDetTitle{
+            width: 100%;
+            height: 58px;
+            line-height: 58px;
+            text-indent: 30px;
+            margin-bottom: 1px;
+            background: white;
+            a:hover{
+                color: $color1;
+            }
+        }
+        .myOfferDetMain{
+            width: 100%;
+            height: auto;
+            background: white;
+            .myOfferDetBill{
+                width:982px;
+                height: auto;
+                padding:12px 0 50px;
+                margin: 0 auto;
+                overflow: hidden;
+                .myOfferDetBillTitle{
+                    width:947px;
+                    height: 20px;
+                    line-height: 20px;
+                    font-size: $fontizebu;
+                    text-indent: 10px;
+                    font-weight:600;
+                    margin-bottom: 35px;
+                    margin-left: 30px;
+                    border-left:5px solid $color1;
+                    .myOfferDetBillStatus{
+                        display: block;
+                        float: right;
+                        width: 74px;
+                        height: 40px;
+                        line-height: 40px;
+                        text-align: center;
+                        color: white;
+                        background: $color1;
+                        font-size: $fontizebu;
+                        font-weight: 100;
+                        border-top-left-radius: 20px;
+                        border-bottom-left-radius: 20px;
+                    }
+                }
+                .myOfferDetBillInfo{
+                    width:1190px;
+                    padding-left: 30px;
+                    height: auto;
+                    overflow: hidden;
+                    .myOfferDetBillInfoLeft{
+                        width: 430px;
+                        height:218px;
+                        float: left;
+                        .myOfferDetBillInfoItem{
+                            width: 100%;
+                            height: 20px;
+                            line-height: 20px;
+                            margin-bottom:13px;
+                            overflow: hidden;
+                            .myOfferDetBillInfoItem_label{
+                                width:106px;
+                                height: 20px;
+                                float: left;
+                                margin-right: 54px;
+                                text-align: right;
+                            }
+                            .myOfferDetBillInfoItem_text{
+                                width:270px;
+                                height: 20px;
+                                float: left;
+                            }
+                        }
+                    }
+                    .myOfferDetBillInfoRight{
+                        width:382px;
+                        height: 218px;
+                        float: left;
+                        img{
+                            display: block;
+                            width: 382px;
+                            height: 218px;
+                        }
+                    }
+                }
+                
+            }
+            .myOfferDetAttach{
+                width:1220px;
+                height: auto;
+                padding: 25px 30px 50px;
+                margin: 0 auto;
+                overflow: hidden;
+                .myOfferDetAttachTitle{
+                    width: 100%;
+                    height: 20px;
+                    line-height: 20px;
+                    font-size: $fontizebu;
+                    text-indent: 10px;
+                    font-weight: 600;
+                    margin-bottom: 35px;
+                    border-left:5px solid $color1;
+                }
+                .myOfferDetAttachInfo{
+                    padding: 0 10px;
+                    img{
+                        display: block;
+                        width: 92px;
+                        height: 108px;
+                        margin-bottom: 10px;
+                    }
+                    .myOfferDetAttachDes{
+                        width: 92px;
+                        height:20px;
+                        line-height: 20px;
+                        text-align: center;
+                    }
+                }
+            }
+            .myOfferDetBtn{
+                width:240px;
+                height:58px;
+                margin: 0 auto;
+                padding-bottom: 50px;
+                .myOfferDetBtnBack{
+                    display: block;
+                    width:240px;
+                    height: 58px;
+                    line-height: 58px;
+                    text-align: center;
+                    color: white;
+                    background: $color1;
+                    font-size: $fontizebu;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+}
+
+//womaidaodehuipiao
+.accountBuy{
+    width: 982px;
+    height: auto;
+    .accBuyMain{
+        width: 100%;
+        height: 100%;
+        .accBuyItem{
+            width:982px;
+            height:30px;
+            line-height: 30px;
+            padding:14px 0;
+            margin-bottom: 2px;
+            background: white;
+            .accBuyItemNav{
+                width:136px;
+                text-align: center;
+                float: left;
+                .accBuyItem_scan{
+                    display: block;
+                    width: 80px;
+                    height: 30px;
+                    border: 1px solid $color9;
+                    border-radius: 3px;
+                    margin:0 auto;
+                }
+            }
+            .accBuyItemNav:nth-child(4){
+                width:162px;
+            }
+            .accBuyItemNav:last-child{
+                width:140px;
+            }
+        }
+        .accBuyTitle{
+            color: white;
+            background: $color1;
+        }
+    }
+}
+
+
+//zhanghuxinxi
+.accountInfo{
+    width: 982px;
+    height: auto;
+    .personInfo{
+        padding: 20px;
+        width: 942px;
+        height: 214px;
+        background: white;
+        margin-bottom: 1px;
+        .perInfoTop{
+            width: 100%;
+            height: 22px;
+            line-height: 22px;
+            margin-bottom: 10px;
+            .perInfoTitle{
+                font-size: 16px;
+                font-weight: 500;
+                text-indent: 10px;
+                float: left;
+                border-left:5px solid $color1;
+            }
+            .perInfoEdit{
+                float: right;
+                .perInfoEditBtn{
+                    color: $color1;
+                }
+            }
+        }
+        .perInfoList{
+            padding: 10px;
+            width: 922px;
+            height: auto;
+            .perInfoItem{
+                width: 100%;
+                height: 20px;
+                line-height: 20px;
+                margin-bottom: 16px;
+                overflow: hidden;
+                .perInfoItem_label{
+                    float: left;
+                }
+                .perInfoItem_text{
+                    float: left;
+                }
+                .perInfoItem_des{
+                    float: left;
+                    font-size: $fontizede;
+                    color: #878787;
+                }
+            }
+        }
+    }
+    .identInfo{
+        padding: 20px;
+        width: 942px;
+        height: 142px;
+        background: white;
+        .identInfoTop{
+            width: 100%;
+            height: 22px;
+            line-height: 22px;
+            margin-bottom: 10px;
+            .identInfoTitle{
+                font-size: 16px;
+                font-weight:500;
+                text-indent: 10px;
+                border-left:5px solid $color1;
+            }
+        }
+        .identInfoList{
+            padding: 10px;
+            width: 922px;
+            height: auto;
+            .identInfoItem{
+                width: 100%;
+                height: 20px;
+                line-height: 20px;
+                margin-bottom: 16px;
+                overflow: hidden;
+                .identInfoItem_label{
+                    float: left;
+                }
+                .identInfoItem_text{
+                    float: left;
+                }
+                .identInfoItem_ident{
+                    float: left;
+                    padding-left: 5px;
+                    .identInfoItem_identBtn{
+                        color: $color1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//zhanghuxinxi bianji
+.accInfoEdit{
+    width: 982px;
+    height: auto;
+    .accInfoEditTitle{
+        width:942;
+        height: 58px;
+        line-height: 58px;
+        padding: 0 20px;
+        margin-bottom: 1px;
+        background: white;
+    }
+    .accInfoEditMain{
+        width: 100%;
+        height: auto;
+        background: white;
+        .accInfoEditTop{
+            width: 100%;
+            height: 26px;
+            font-size: 18px;
+            text-align: center;
+            color: $color1;
+            padding-top: 76px;
+            margin: 0 auto 26px;
+        }
+        .changPassList{
+            width: 700px;
+            height: auto;
+            padding-left: 282px;
+            .accInfoEditItem{
+                width: 100%;
+                height:46px;
+                line-height: 46px;
+                margin-bottom: 24px;
+                .accInfoEditItem_label{
+                    float: left;
+                    width: 84px;
+                    margin-right: 10px;
+                }
+                .accInfoEditItem_text{
+                    float: left;
+                    width: 310px;
+                    height: 44px;
+                    line-height: 44px;
+                    border: 1px solid $color9;
+                    border-radius: 4px;
+                    input{
+                        width: 310px;
+                        height: 44px;
+                        display: block;
+                        border-radius:4px;
+                        text-indent: 20px;
+                    }
+                }
+                .accInfoEditItem_tip{
+                    float: left;
+                    width:100px;
+                    color: red;
+                    padding-left: 10px;
+                }
+            }
+        }
+        .accInfoEditBtn{
+            width:240px;
+            height:58px;
+            margin: 50px auto;
+            padding-bottom: 50px;
+            .accInfoEditEnsure{
+                display: block;
+                width:240px;
+                height: 58px;
+                line-height: 58px;
+                text-align: center;
+                color: white;
+                background: $color1;
+                font-size: $fontizebu;
+                border-radius: 4px;
+            }
+        }
+    }
+}
+
+//gerenxinxi renzheng
+.accInfoIdent{
+    width: 982px;
+    height: auto;
+    .accInfoIdentTitle{
+        width:942;
+        height: 58px;
+        line-height: 58px;
+        padding: 0 20px;
+        margin-bottom: 1px;
+        background: white;
+    }
+    .accInfoIdentMain{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        background: white;
+        .accInfoIdentLeft{
+            width: 454px;
+            height: auto;
+            float: left;
+            padding: 20px 18px;
+            border-right: 1px dashed #999;
+            .accInfoIdentLeftTitle{
+                margin-bottom: 17px;
+                span{
+                    color: #878787;
+                    font-size: $fontizede;
+                }
+            }
+            .accInfoIdentLeftName{
+                width: 100%;
+                height:46px;
+                line-height: 46px;
+                margin-bottom: 24px;
+                .accInfoIdentLeftName_label{
+                    float: left;
+                    width: 84px;
+                    margin-right: 10px;
+                }
+                .accInfoIdentLeftName_text{
+                    float: left;
+                    width: 310px;
+                    height: 44px;
+                    line-height: 44px;
+                    border: 1px solid $color9;
+                    border-radius: 4px;
+                    input{
+                        width: 310px;
+                        height: 44px;
+                        display: block;
+                        border-radius:4px;
+                        text-indent: 20px;
+                    }
+                }
+            }
+            .accInfoIdentLeftIdcard{
+                width: 100%;
+                height:46px;
+                line-height: 46px;
+                margin-bottom: 24px;
+                .accInfoIdentLeftIdcard_label{
+                    float: left;
+                    width: 84px;
+                    margin-right: 10px;
+                }
+                .accInfoIdentLeftIdcard_text{
+                    float: left;
+                    width: 310px;
+                    height: 44px;
+                    line-height: 44px;
+                    border: 1px solid $color9;
+                    border-radius: 4px;
+                    input{
+                        width: 310px;
+                        height: 44px;
+                        display: block;
+                        border-radius:4px;
+                        text-indent: 20px;
+                    }
+                }
+            }
+            .accInfoIdentLeftIdfont{
+                width: 100%;
+                height:auto;
+                overflow: hidden;
+                margin-bottom: 24px;
+                .accInfoIdentLeftIdfont_label{
+                    float: left;
+                    width: 84px;
+                    height:46px;
+                    line-height: 46px;
+                    margin-right: 10px;
+                }
+                .accInfoIdentLeftIdfont_img{
+                    float: left;
+                    width: 310px;
+                    height: auto;
+                    line-height: 44px;
+                    input{
+                        width: 310px;
+                        height: 23px;
+                        display: block;
+                        margin: 12px 0 10px;
+                    }
+                }
+            }
+            .accInfoIdentLeftIdback{
+                width: 100%;
+                height:auto;
+                overflow: hidden;
+                margin-bottom: 24px;
+                .accInfoIdentLeftIdback_label{
+                    float: left;
+                    width: 84px;
+                    height:46px;
+                    line-height: 46px;
+                    margin-right: 10px;
+                }
+                .accInfoIdentLeftIdback_img{
+                    float: left;
+                    width: 310px;
+                    height: auto;
+                    line-height: 44px;
+                    input{
+                        width: 310px;
+                        height: 23px;
+                        display: block;
+                        margin: 12px 0 10px;
+                    }
+                }
+            }
+            .accInfoIdentLeftBtn{
+                width:240px;
+                height:58px;
+                margin: 0 auto 54px;
+                .accInfoIdentLeftBtnSubmit{
+                    display: block;
+                    width:240px;
+                    height: 58px;
+                    line-height: 58px;
+                    text-align: center;
+                    color: white;
+                    background: $color1;
+                    font-size: $fontizebu;
+                    border-radius: 4px;
+                }
+            }
+        }
+        .accInfoIdentRight{
+            width: 431px;
+            height: auto;
+            float: left;
+            padding: 20px 0 20px 60px;
+            .accInfoIdentRightTitle{
+                margin-bottom: 17px;
+                span{
+                    color: #878787;
+                    font-size: $fontizede;
+                }
+            }
+            .accInfoIdentRightName{
+                width: 100%;
+                height:46px;
+                line-height: 46px;
+                margin-bottom: 24px;
+                .accInfoIdentRightName_label{
+                    float: left;
+                    width: 84px;
+                    margin-right: 10px;
+                }
+                .accInfoIdentRightName_text{
+                    float: left;
+                    width: 310px;
+                    height: 44px;
+                    line-height: 44px;
+                    border: 1px solid $color9;
+                    border-radius: 4px;
+                    input{
+                        width: 310px;
+                        height: 44px;
+                        display: block;
+                        border-radius:4px;
+                        text-indent: 20px;
+                    }
+                }
+            }
+            .accInfoIdentRightLicense{
+                width: 100%;
+                height:auto;
+                overflow: hidden;
+                margin-bottom: 24px;
+                .accInfoIdentRightLicense_label{
+                    float: left;
+                    width: 84px;
+                    height:46px;
+                    line-height: 46px;
+                    margin-right: 10px;
+                }
+                .accInfoIdentRightLicense_img{
+                    float: left;
+                    width: 310px;
+                    height: auto;
+                    line-height: 44px;
+                    input{
+                        width: 310px;
+                        height: 23px;
+                        display: block;
+                        margin: 12px 0 10px;
+                    }
+                }
+            }
+            .accInfoIdentRightBtn{
+                width:240px;
+                height:58px;
+                margin: 0 auto 54px;
+                .accInfoIdentRightBtnSubmit{
+                    display: block;
+                    width:240px;
+                    height: 58px;
+                    line-height: 58px;
+                    text-align: center;
+                    color: white;
+                    background: $color1;
+                    font-size: $fontizebu;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+}
+
+//xiaoxizhongxin
+.accountMes{
+    width: 982px;
+    height: auto;
+    .accountMesTitle{
+        width:942;
+        height: 58px;
+        line-height: 58px;
+        padding: 0 20px;
+        margin-bottom: 1px;
+        background: white;
+    }
+    .accMesMain{
+        width: 100%;
+        height: auto;
+        background: white;
+        .accMesList{
+            width: 100%;
+            height: auto;
+            .accMesItem{
+                display: block;
+                width: 942px;
+                height: 58px;
+                line-height: 58px;
+                padding: 0 20px;
+                background:#fffbf6;
+                .accMesItem_dot{
+                    width: 6px;
+                    height: 6px;
+                    float: left;
+                    margin: 26px 5px 26px 0;
+                    border-radius:3px;
+                    background: $color1;
+                }
+                .accMesItem_text{
+                    float: left;
+                }
+                .accMesItem_time{
+                    float: right;
+                    color: $color9;
+                    font-size: $fontizede;
+                }
+            }
+            .accMesItemRead{
+                background:white ;
+                .accMesItem_dot{
+                    background: $color9;
+                }
+            }
+        }
+    }
+}
+
+//xiaoxi detail
+.accountMesDet{
+    width: 982px;
+    height: auto;
+    .accMesDetTitle{
+        width:942;
+        height: 58px;
+        line-height: 58px;
+        padding: 0 20px;
+        margin-bottom: 1px;
+        background: white;
+    }
+    .accMesDetMain{
+        width: 100%;
+        height: auto;
+        background: white;
+        .accMesDetMainTitle{
+            display: block;
+            width: 942px;
+            height: 58px;
+            line-height: 58px;
+            padding: 0 20px;
+            .accMesDetItem_dot{
+                width: 6px;
+                height: 6px;
+                float: left;
+                margin: 26px 5px 26px 0;
+                border-radius:3px;
+                background: $color1;
+            }
+            .accMesDetItem_text{
+                float: left;
+            }
+            .accMesDetItem_time{
+                float: right;
+                color: $color9;
+                font-size: $fontizede;
+            }
+        }
+        .accMesDetMainDet{
+            padding: 0 39px 39px;
+            line-height: 20px;
+        }
+    }
+}
+
+//xiugaimima
+.changePass{
+    width: 982px;
+    height: auto;
+    .changePassTitle{
+        width:942;
+        height: 58px;
+        line-height: 58px;
+        padding: 0 20px;
+        margin-bottom: 1px;
+        background: white;
+    }
+    .changePassMain{
+        width: 100%;
+        height: auto;
+        background: white;
+        .changePassTop{
+            width: 100%;
+            height: 26px;
+            font-size: 18px;
+            text-align: center;
+            color: $color1;
+            padding-top: 76px;
+            margin: 0 auto 26px;
+        }
+        .changPassList{
+            width: 700px;
+            height: auto;
+            padding-left: 282px;
+            .changePassItem{
+                width: 100%;
+                height:46px;
+                line-height: 46px;
+                margin-bottom: 24px;
+                .changePassItem_label{
+                    float: left;
+                    width: 84px;
+                    margin-right: 10px;
+                }
+                .changePassItem_text{
+                    float: left;
+                    width: 310px;
+                    height: 44px;
+                    line-height: 44px;
+                    border: 1px solid $color9;
+                    border-radius: 4px;
+                    input{
+                        width: 310px;
+                        height: 44px;
+                        display: block;
+                        border-radius:4px;
+                        text-indent: 20px;
+                    }
+                }
+                .changePassItem_tip{
+                    float: left;
+                    width:100px;
+                    color: red;
+                    padding-left: 10px;
+                }
+            }
+        }
+        .changePassBtn{
+            width:240px;
+            height:58px;
+            margin: 50px auto;
+            padding-bottom: 50px;
+            .changePassEnsure{
+                display: block;
+                width:240px;
+                height: 58px;
+                line-height: 58px;
+                text-align: center;
+                color: white;
+                background: $color1;
+                font-size: $fontizebu;
+                border-radius: 4px;
+            }
+        }
+    }
 }
